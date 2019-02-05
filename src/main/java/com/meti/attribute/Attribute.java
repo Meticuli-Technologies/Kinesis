@@ -8,7 +8,7 @@ import com.meti.util.Capsule;
  * @since 2/5/2019
  */
 public class Attribute {
-    final Capsule<Object> value;
+    public final Capsule<Object> value;
     final Object key;
 
     public Attribute(boolean modifiable, Object content, Object key) {

@@ -9,7 +9,7 @@ import com.meti.util.Distinct;
  * @since 2/5/2019
  */
 public class Component implements Distinct {
-    protected final Attributes attributes = new Attributes();
+    public final Attributes attributes = new Attributes();
 
     @Override
     public Attributes getAttributes() {
