@@ -6,8 +6,8 @@ package com.meti.util;
  * @since 2/5/2019
  */
 public class Capsule<T> {
-    private final boolean modifiable;
-    private T content;
+    final boolean modifiable;
+    T content;
 
     public Capsule() {
         this(true);
