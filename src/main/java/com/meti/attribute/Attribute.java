@@ -8,8 +8,8 @@ import com.meti.util.Capsule;
  * @since 2/5/2019
  */
 public class Attribute {
-    public final Capsule<Object> value;
-    private final Object key;
+    final Capsule<Object> value;
+    final Object key;
 
     public Attribute(boolean modifiable, Object content, Object key) {
         this.value = new Capsule<>(modifiable, content);
