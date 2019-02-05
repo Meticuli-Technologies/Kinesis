@@ -21,20 +21,20 @@ class CapsuleTest {
     void construct() {
         Capsule<Object> capsule = new Capsule<>();
         assertTrue(capsule.modifiable);
-        assertEquals(null, capsule.content);
+        assertNull(capsule.content);
     }
 
     @Test
     void constructWithoutInitial() {
         Capsule<Object> capsule = new Capsule<>(true);
-        assertEquals(true, capsule.modifiable);
-        assertEquals(null, capsule.content);
+        assertTrue(capsule.modifiable);
+        assertNull(capsule.content);
     }
 
     @Test
     void constructWithInitial() {
         Capsule<String> capsule = new Capsule<>(true, "test");
-        assertEquals(true, capsule.modifiable);
+        assertTrue(capsule.modifiable);
         assertEquals("test", capsule.content);
     }
 
