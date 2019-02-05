@@ -13,7 +13,7 @@ class CapsuleTest {
     @Test
     void construct() {
         Capsule<Object> capsule = new Capsule<>();
-        assertEquals(false, capsule.modifiable);
+        assertTrue(capsule.modifiable);
         assertEquals(null, capsule.content);
     }
 
@@ -57,7 +57,7 @@ class CapsuleTest {
 
     @Test
     void setContentUnmodifiable() {
-        Capsule<Object> capsule = new Capsule<>();
+        Capsule<Object> capsule = new Capsule<>(false);
         assertThrows(IllegalStateException.class, () -> capsule.setContent(null));
     }
 }
