@@ -1,4 +1,4 @@
 # Kinesis
-A Java graphics library.
+[![Build Status](https://travis-ci.com/SirMathhman/Kinesis.svg?branch=master)](https://travis-ci.com/SirMathhman/Kinesis)
 
-https://travis-ci.com/SirMathhman/Kinesis.svg?branch=master
+A Java graphics library.
