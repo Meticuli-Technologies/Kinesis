@@ -1,3 +1,13 @@
+#Even though this project is primarily Java,
+#the language still has to be specified as Scala.
+#For the most part, SBT is a build system primarily
+#employed by Scala programmers. However, the build
+#system is also able to function with other JVM
+# languages as well
+#
+#This project may contain more languages for the JVM
+#Other than just Java or Scala (such as Kotlin).
+
 language: scala
 
 jdk:
