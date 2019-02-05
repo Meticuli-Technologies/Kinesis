@@ -1,5 +1,7 @@
 package com.meti.util;
 
+import java.util.Objects;
+
 /**
  * @author SirMathhman
  * @version 0.0.0
@@ -38,5 +40,14 @@ public class Capsule<T> {
         T previousContent = this.content;
         this.content = content;
         return previousContent;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Capsule<?> capsule = (Capsule<?>) o;
+        return modifiable == capsule.modifiable &&
+                Objects.equals(content, capsule.content);
     }
 }

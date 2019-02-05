@@ -11,6 +11,13 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class CapsuleTest {
     @Test
+    void equals() {
+        Capsule<String> capsule0 = new Capsule<>(false, "test");
+        Capsule<String> capsule1 = new Capsule<>(false, "test");
+        assertEquals(capsule0, capsule1);
+    }
+
+    @Test
     void construct() {
         Capsule<Object> capsule = new Capsule<>();
         assertTrue(capsule.modifiable);
